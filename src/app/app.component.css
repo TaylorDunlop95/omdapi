@@ -1,0 +1,25 @@
+.layout {
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1em auto 1em;
+  grid-template-rows: 5em 10em auto 2em;
+  grid-template-areas:
+    "header header header"
+    "search search search"
+    ". body ."
+    ". . . ";
+}
+
+.header {
+  grid-area: header;
+  align-self: center;
+}
+
+.search {
+  grid-area: search;
+}
+
+.body {
+  grid-area: body;
+}

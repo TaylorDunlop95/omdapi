@@ -1,0 +1,12 @@
+<div ngClass="layout">
+  <div ngClass="header">
+    <h1>{{title}}</h1>
+  </div>
+  <div ngClass="search">
+    <app-search></app-search>
+  </div>
+  <div ngClass="body">
+    <app-list *ngIf="dataIsList()"></app-list>
+    <app-details *ngIf="dataIsUnit()"></app-details>
+  </div>
+</div>

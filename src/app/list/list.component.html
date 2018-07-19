@@ -1,0 +1,18 @@
+<div ngClass="layout">
+  <div ngClass="container">
+    <div *ngFor="let movie of searchData.Search">
+      <div [ngClass]="(movie === selectedMovie ) ? 'row-selected row': 'row'" (click)="_omdb.setSelectedMovie(movie)">
+        <p>{{movie.Title}}</p>
+      </div>
+    </div>
+  </div>
+  <div ngClass="container" *ngIf="_omdb.isMovieSelected()">
+    <mat-card ngClass="card">
+      <mat-card-header>
+        <mat-card-title>{{selectedMovie.Title}}</mat-card-title>
+        <mat-card-subtitle>{{selectedMovie.Year}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]=selectedMovie.Poster alt="">
+    </mat-card>
+  </div>
+</div>

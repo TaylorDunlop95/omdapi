@@ -1,0 +1,9 @@
+/* importing prebuilt angular theme, because why not*/
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}

@@ -1,0 +1,12 @@
+<div ngClass="searchLayout">
+  <mat-form-field>
+    <input matInput placeholder="Movie Title" [(ngModel)]="title">
+  </mat-form-field>
+  <mat-form-field>
+    <input [disabled]=searchAllTime matInput placeholder="Release Year" [(ngModel)]="year">
+  </mat-form-field>
+  <mat-slide-toggle primary [(ngModel)]="searchAllTime">Search All Time?</mat-slide-toggle>
+  <button (click)="search()" mat-icon-button>
+    <mat-icon>search</mat-icon>
+  </button>
+</div>
