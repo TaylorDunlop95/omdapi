@@ -2,7 +2,7 @@
 
 ## Using the App.
 
-When using Omdapi, you have limited access to the [oMDB](http://www.omdbapi.com/) movie database.
+When using Omdapi, you have limited access to the [OMDb](http://www.omdbapi.com/) movie database.
 
 You are able to preform two kinds of searches. One grabs all movies across time based on the title searched and the other grabs one movie based on the title and year.
 
